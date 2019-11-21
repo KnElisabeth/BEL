@@ -22,14 +22,12 @@ try {
     
     //Exécuter notre requête sql
     $createUser->execute();
-
-    //Récupérer le contenu de la requête
-    //n'est pas utile cette fois
-    //$allUsers=$allUsers->fetchAll();
-    //on préfère rediriger vers la vue de tous les utilisateurs:
+    
+    session_start(); 
+    $_SESSION["username"]=$_POST['username'];
+    $_SESSION["password"]=$_POST['password']; 
     header('Location:../home.php');
 
-        
 } catch (PDOException $e) {
     echo "Erreur !:$e->getMessage()<br/>";
     die();

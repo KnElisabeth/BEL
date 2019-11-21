@@ -27,14 +27,14 @@ main{
     background-color: #C7E1FF;
 }
 .main{
-    height: 30%;
-    padding: 10px;
+    height: 10%;
+    padding: 7px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 .title{
-    height: 20%;
+    height: 10%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -42,6 +42,7 @@ main{
 .child{
     display: flex;
     height: 60%;
+    width: 100%;
 }
 .front{
     width: 33%;
@@ -71,33 +72,19 @@ button {
     background-color:#021E40; 
     border: none;
     color: white;
-    padding: 35px 72px;
-    margin: 40px;
+    padding:35px 72px;
     border-radius: 4px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 26px;
+    font-size: 20px;
     box-shadow: 3px 3px 3px #4673ab;
-    height: 40%;
 }
 button:hover {
     background-image: radial-gradient(#97ABC2,#637180);
 }
-.content{
-    display: flex;
-    height: 60%;
-}
-.theorie{
-    width: 50%;
-    height: 100%;
-}
 h1{
-    font-size: 80px;
-    color: rgb(236, 61, 30);
-}
-h2{
-    font-size: 40px;
+    font-size: 70px;
     color: rgb(236, 61, 30);
 }
 p{
@@ -105,9 +92,6 @@ p{
 }
 .home{
     width: 50px;
-}
-.front{
-    display: none;
 }
 .buttonIndex{
     background-color:rgb(236, 61, 30);
@@ -117,18 +101,6 @@ p{
     height: 15%;
     width: 100%;
 }
-form {
-    display: flex;
-} 
-/*buttonIndex:hover {
-    background-image: radial-gradient(#97ABC2,#637180);
-}
-a{
-    color:white;
-    font-size: 30px;
-    text-shadow: black 1px 1px 1px; 
-    text-decoration: none;
-}*/
 .particles {
     height: 100vh;
     display: flex;
@@ -138,14 +110,22 @@ a{
     font: normal 75% Arial, Helvetica, sans-serif;
 }
 .login {
+   z-index: 100;
+   width: 100%;
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 100%;
-   margin: 0;
-   z-index: 100;
 }
+.formIndex{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   width:20%;
+   margin: 20px;
+}
+
 /*---PARTICLES---*/
+
 #particles-js {
     position: absolute;
     width: 100%;
@@ -156,7 +136,6 @@ a{
     background-size: cover;
     background-position: 50% 50%;
 } 
-
 .background {
     background-size: cover;
     background-image: url("../img/background.jpg");
@@ -178,8 +157,20 @@ footer{
     font-size: 2px;
     background-color:#4673ab;
 }
+
+/*----RESPONSIVE---*/
+
+
 @media screen and (max-width: 768px) {
     .login {
         display: block;
+    }
+    .buttonIndex{
+        background-color:rgb(236, 61, 30);
+        box-shadow: 2px 2px 2px black;
+        text-shadow:1px 1px 1px black;
+        cursor: pointer;
+        height: 15%;
+        width: 100%;
     }
 }
